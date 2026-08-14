@@ -7,7 +7,7 @@ export function LocationMap() {
       <section className="relative h-[400px] w-full px-5 md:px-16">
         <div className="relative h-full w-full">
           <Image
-            src="/images/home/map.jpg"
+            src="/images/home/map.png"
             alt="Localisation du restaurant"
             fill
             className="object-cover"

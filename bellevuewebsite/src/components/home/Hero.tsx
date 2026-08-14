@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative flex h-screen min-h-[640px] w-full flex-col justify-end overflow-hidden text-white">
       <Image
-        src="/images/hero/hero-dining.jpg"
+        src="/images/hero/hero-dining.png"
         alt="Salle du restaurant, ambiance chaleureuse"
         fill
         priority

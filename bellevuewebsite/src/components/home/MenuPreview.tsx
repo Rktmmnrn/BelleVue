@@ -43,7 +43,7 @@ export function MenuPreview() {
       >
         <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
           <div className="relative h-full w-full">
-            <Image src="/images/home/menu-left.jpg" alt="Plat du menu" fill className="object-cover" />
+            <Image src="/images/home/menu-left.png" alt="Plat du menu" fill className="object-cover" />
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export function MenuPreview() {
 
         <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
           <div className="relative h-full w-full">
-            <Image src="/images/home/menu-right.jpg" alt="Plat du menu" fill className="object-cover" />
+            <Image src="/images/home/menu-right.png" alt="Plat du menu" fill className="object-cover" />
           </div>
         </div>
       </Reveal>

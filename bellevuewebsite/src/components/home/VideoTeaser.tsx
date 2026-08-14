@@ -7,7 +7,7 @@ export function VideoTeaser() {
     <Reveal>
       <section className="relative flex h-[70vh] min-h-[400px] w-full items-center justify-center overflow-hidden">
         <Image
-          src="/images/home/video-teaser.jpg"
+          src="/images/home/video-teaser.png"
           alt="Aperçu du restaurant"
           fill
           className="object-cover"

@@ -10,7 +10,7 @@ export function AboutPreview() {
       <Reveal className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
         <div className="relative aspect-[4/3] w-full lg:aspect-auto lg:h-[583px]">
           <Image
-            src="/images/home/about-1.jpg"
+            src="/images/home/about-1.png"
             alt="Intérieur du restaurant"
             fill
             className="object-cover"
@@ -53,20 +53,20 @@ export function AboutPreview() {
           </Button>
         </div>
 
-        <div className="relative">
-          <div className="relative aspect-square w-full lg:h-[600px] lg:w-4/5">
+        <div className="relative lg:flex lg:items-center lg:justify-end">
+          <div className="relative flex aspect-square w-full lg:h-[600px] lg:w-4/5">
             <Image
-              src="/images/home/about-2.jpg"
+              src="/images/home/about-2.png"
               alt="Notre table"
               fill
-              className="object-cover"
+              className="object-cover right-0"
             />
           </div>
-          <div className="relative -mt-16 flex flex-col gap-4 bg-ink p-8 text-white lg:absolute lg:inset-y-0 lg:left-0 lg:mt-0 lg:w-[380px] lg:justify-center">
-            <h3 className="font-display text-xl uppercase text-gold">opening time hours</h3>
+          <div className="relative flex flex-col gap-4 bg-ink p-8 text-white lg:absolute lg:justify-center lg:left-0">
+            <h3 className="font-display text-lg uppercase text-gold">opening time hours</h3>
             <div className="flex flex-col gap-3">
               {siteConfig.hours.map((h) => (
-                <div key={h.days} className="flex items-center justify-between gap-4 text-sm font-light">
+                <div key={h.days} className="flex items-center justify-between gap-4 text-lg font-light">
                   <span>{h.days}</span>
                   <span className="h-px flex-1 border-t border-white/40" />
                   <span>{h.time}</span>

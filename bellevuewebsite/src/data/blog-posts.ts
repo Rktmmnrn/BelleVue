@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Casual Dinning", "Coffees"],
     date: { day: "05", month: "OCT 24" },
-    image: "/images/home/blog-1.jpg",
+    image: "/images/home/blog-1.jpeg",
   },
   {
     slug: "how-real-restaurants-approach-benefits",
@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Food", "Industry Expertise"],
     date: { day: "05", month: "OCT 24" },
-    image: "/images/home/blog-2.jpg",
+    image: "/images/home/blog-2.jpeg",
   },
   {
     slug: "food-is-the-foundation-of-true",
@@ -39,6 +39,6 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Food", "Restaurants"],
     date: { day: "05", month: "OCT 24" },
-    image: "/images/home/blog-3.jpg",
+    image: "/images/home/blog-3.jpeg",
   },
 ];
