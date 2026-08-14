@@ -15,49 +15,21 @@ export const menuCategories: MenuCategory[] = [
   "desserts",
 ];
 
-// Contenu "lorem ipsum" repris tel quel de l'ancien site — à remplacer par ta vraie carte
-// quand on attaquera la page Menu complète (Phase 3).
+// Contenu "lorem ipsum" repris tel quel de l'ancien site, réparti sur les 4 catégories
+// pour que le filtre ait vraiment quelque chose à filtrer. À remplacer par ta vraie carte.
+function placeholderItems(category: MenuCategory, count: number): MenuItem[] {
+  return Array.from({ length: count }, (_, i) => ({
+    id: `${category.replace(/\s+/g, "-")}-${i + 1}`,
+    name: "Lorem Ipsum",
+    price: "24$",
+    category,
+    description: "Lorem ipsum dolor sit amet consectetur.",
+  }));
+}
+
 export const menuItems: MenuItem[] = [
-  {
-    id: "item-1",
-    name: "Lorem Ipsum",
-    price: "24$",
-    category: "special menu",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    id: "item-2",
-    name: "Lorem Ipsum",
-    price: "24$",
-    category: "special menu",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    id: "item-3",
-    name: "Lorem Ipsum",
-    price: "24$",
-    category: "special menu",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    id: "item-4",
-    name: "Lorem Ipsum",
-    price: "24$",
-    category: "special menu",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    id: "item-5",
-    name: "Lorem Ipsum",
-    price: "24$",
-    category: "special menu",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
-  {
-    id: "item-6",
-    name: "Lorem Ipsum",
-    price: "24$",
-    category: "special menu",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-  },
+  ...placeholderItems("special menu", 6),
+  ...placeholderItems("drinks", 6),
+  ...placeholderItems("seafood", 6),
+  ...placeholderItems("desserts", 6),
 ];
