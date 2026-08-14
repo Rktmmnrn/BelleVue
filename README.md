@@ -34,3 +34,7 @@ restaurant-nextjs/
 ├── package.json
 └── README.md
 ```
+
+## Stack utilisé
+- NextJS, TailwindCSS
+- Motion pour les animations
