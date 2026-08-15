@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Mail, MapPin, Menu, Search, X } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 import { useSlideNav } from "@/hooks/useSlideNav";
@@ -24,14 +24,8 @@ export function Header() {
   const isHome = pathname === "/";
   const { isOpen, close, toggle } = useSlideNav();
 
-  // Bloque le scroll du body pendant que l'overlay mobile plein écran est ouvert
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
-
+  const popupRef = useRef<HTMLDivElement>(null);
+  
   // Ferme au clavier avec Echap (accessibilité)
   useEffect(() => {
     if (!isOpen) return;
@@ -42,10 +36,24 @@ export function Header() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [isOpen, close]);
 
+  // click dehors
+  // useEffect(() => {
+  //   if (!isOpen) return;
+  //   function handleClickOutside(e: MouseEvent) {
+  //     if (popupRef.current && !popupRef.current.contains(e.target as Node)) {
+  //       close();
+  //     }
+  //   }
+  //   document.addEventListener('mousedown', handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //   };
+  // }, [isOpen, close]);
+
   return (
     <>
       <header className="sticky top-0 z-50 flex flex-col rounded-b-[20px] bg-ink text-white lg:rounded-none">
-        {/* Barre de contact — absente sur l'accueil, comme dans l'ancien site */}
+        {/* Barre de contact — absente sur l'accueil */}
         {!isHome && (
           <div className="flex items-center justify-between border-b border-gold/40 px-5 py-3 md:px-16 md:py-4">
             <div className="flex items-center gap-3">
@@ -93,7 +101,7 @@ export function Header() {
               onClick={toggle}
               aria-expanded={isOpen}
               aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
-              className="relative z-50 text-gold"
+              className="relative z-50 text-gold cursor-pointer"
             >
               {isOpen ? <X size={26} /> : <Menu size={26} />}
             </button>

@@ -10,9 +10,7 @@ interface ScrollCarouselProps {
 }
 
 /**
- * Dans l'ancien site, les boutons `.image-btn1`/`.image-btn2` affichaient
- * "<" et ">" mais ne faisaient rien au clic (aucun handler). Ici ils
- * font vraiment défiler la piste.
+"<" et ">" pour défillement de piste
  */
 export function ScrollCarousel({ children, className = "" }: ScrollCarouselProps) {
   const trackRef = useRef<HTMLDivElement>(null);

@@ -25,7 +25,7 @@ export function InfoDrawer({ isOpen, onClose }: InfoDrawerProps) {
   return (
     <div
       aria-hidden={!isOpen}
-      className={`fixed inset-y-0 right-0 z-40 hidden w-1/2 flex-col items-center justify-center gap-5 bg-ink px-10 text-center text-white transition-transform duration-300 ease-out lg:flex ${
+      className={`absolute top-20 inset-y-0 right-0 z-40 hidden w-1/2 flex-col items-center justify-center gap-5 bg-ink px-10 text-center text-white transition-transform duration-300 ease-out lg:flex ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
