@@ -3,10 +3,10 @@ import { AboutPreview } from "@/components/home/AboutPreview";
 import { MenuPreview } from "@/components/home/MenuPreview";
 import { VideoTeaser } from "@/components/home/VideoTeaser";
 import { Philosophy } from "@/components/home/Philosophy";
-import { Stats } from "@/components/home/Stats";
-import { Testimonials } from "@/components/home/Testimonials";
+import { Stats } from "@/components/shared/Stats";
+import { Testimonials } from "@/components/shared/Testimonials";
 import { NewsPreview } from "@/components/home/NewsPreview";
-import { LocationMap } from "@/components/home/LocationMap";
+import { LocationMap } from "@/components/shared/LocationMap";
 
 export default function Home() {
   return (
