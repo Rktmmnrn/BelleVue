@@ -8,11 +8,6 @@ interface AboutIntroProps {
   ctaHref: string;
 }
 
-/**
- * Contenu identique mot pour mot entre l'aperçu sur l'accueil et l'ancienne
- * page About (seul le bouton changeait : "read more about us" vs "book a
- * table") — un seul composant, paramétré par le CTA.
- */
 export function AboutIntro({ image, ctaLabel, ctaHref }: AboutIntroProps) {
   return (
     <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
