@@ -4,11 +4,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { menuCategories, menuItems, type MenuCategory } from "@/data/menu-items";
 
-/**
- * Dans l'ancien site, les 4 boutons (special menu/drinks/seafood/desserts)
- * étaient purement décoratifs — aucun handler, la liste ne changeait jamais.
- * Ici le clic filtre vraiment, avec une petite transition.
- */
 export function MenuExplorer() {
   const [active, setActive] = useState<MenuCategory>("special menu");
   const filtered = menuItems.filter((item) => item.category === active);

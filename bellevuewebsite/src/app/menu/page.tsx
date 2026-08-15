@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function MenuPage() {
   return (
     <>
-      <PageHero image="/images/menu/hero.jpg" title="menu" />
+      <PageHero image="/images/menu/hero.png" title="menu" />
 
       <section className="flex flex-col items-center gap-10 bg-ink px-5 py-20 text-white md:px-16 lg:py-28">
         <Reveal className="flex flex-col items-center gap-10">
@@ -40,7 +40,7 @@ export default function MenuPage() {
           <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
             <div className="relative h-full w-full">
               <Image
-                src="/images/home/menu-left.jpg"
+                src="/images/home/menu-left.png"
                 alt="Plat du menu"
                 fill
                 className="object-cover"
@@ -53,7 +53,7 @@ export default function MenuPage() {
           <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
             <div className="relative h-full w-full">
               <Image
-                src="/images/home/menu-right.jpg"
+                src="/images/home/menu-right.png"
                 alt="Plat du menu"
                 fill
                 className="object-cover"

@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Casual Dinning", "Coffees"],
     date: { day: "05", month: "OCT 24" },
-    image: "/images/home/blog-1.jpg",
+    image: "/images/home/blog-1.jpeg",
   },
   {
     slug: "how-real-restaurants-approach-benefits",
@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Food", "Industry Expertise"],
     date: { day: "05", month: "OCT 24" },
-    image: "/images/home/blog-2.jpg",
+    image: "/images/home/blog-2.jpeg",
   },
   {
     slug: "food-is-the-foundation-of-true",
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Food", "Restaurants"],
     date: { day: "05", month: "OCT 24" },
-    image: "/images/home/blog-3.jpg",
+    image: "/images/home/blog-3.jpeg",
   },
   {
     slug: "10-ways-to-improve-restaurant-employee-experience",
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Industry Expertise"],
     date: { day: "05", month: "OCT 24" },
-    image: "/images/blog/post-4.jpg",
+    image: "/images/blog/post-4.jpeg",
   },
   {
     slug: "white-castle-among-business",
@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Industry Expertise", "Pizzerias"],
     date: { day: "06", month: "OCT 24" },
-    image: "/images/blog/post-5.jpg",
+    image: "/images/blog/post-5.jpeg",
   },
   {
     slug: "how-to-lock-in-beverage-consistency",
@@ -70,6 +70,6 @@ export const blogPosts: BlogPost[] = [
     author: "John Doe",
     categories: ["Casual Dinning", "Restaurant"],
     date: { day: "06", month: "OCT 24" },
-    image: "/images/blog/post-6.jpg",
+    image: "/images/blog/post-6.jpeg",
   },
 ];

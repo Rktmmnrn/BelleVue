@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      <PageHero image="/images/blog/hero.jpg" title="blog" />
+      <PageHero image="/images/blog/hero.png" title="blog" />
 
       <section className="flex flex-col items-center gap-12 px-5 py-20 text-ink md:px-16 lg:py-28">
         <Reveal>

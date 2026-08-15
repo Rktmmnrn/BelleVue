@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <PageHero image="/images/about/hero.jpg" title="about us" />
+      <PageHero image="/images/about/hero.png" title="about us" />
 
       <section className="px-5 py-20 md:px-16 lg:py-28">
         <Reveal>

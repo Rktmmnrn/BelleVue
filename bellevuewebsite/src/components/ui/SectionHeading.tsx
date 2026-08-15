@@ -6,11 +6,6 @@ interface SectionHeadingProps {
   className?: string;
 }
 
-/**
- * Le motif "petit label avec des tirets de chaque côté + grand titre en
- * dessous" revient dans about/specialMenu/foodPhilosophy/news sur l'ancien
- * site — un seul composant plutôt que de le refaire à chaque section.
- */
 export function SectionHeading({
   eyebrow,
   title,

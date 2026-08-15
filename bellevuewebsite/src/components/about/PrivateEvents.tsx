@@ -11,7 +11,7 @@ export function PrivateEvents() {
       <section className="grid grid-cols-1 items-center gap-10 px-5 py-20 text-ink md:px-16 lg:grid-cols-2 lg:gap-14 lg:py-28">
         <div className="relative aspect-square w-full lg:h-[560px]">
           <Image
-            src="/images/about/private-event.jpg"
+            src="/images/about/private-event.jpeg"
             alt="Événement privé"
             fill
             className="object-cover"

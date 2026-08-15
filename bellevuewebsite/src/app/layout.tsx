@@ -20,7 +20,7 @@ const josefinSans = Josefin_Sans({
   weight: ["300", "400", "500", "600"],
 });
 
-const title = "Logo — Restaurant, Bar, Coffee, Bistro";
+const title = "Restaurant, Bar, Coffee, Bistro";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

@@ -3,9 +3,9 @@ import { ScrollCarousel } from "@/components/ui/ScrollCarousel";
 import { Reveal } from "@/components/ui/Reveal";
 
 const images = [
-  "/images/about/gallery-1.jpg",
-  "/images/about/gallery-2.jpg",
-  "/images/about/gallery-3.jpg",
+  "/images/about/gallery-1.jpeg",
+  "/images/about/gallery-2.jpeg",
+  "/images/about/gallery-3.jpeg",
 ];
 
 export function Gallery() {

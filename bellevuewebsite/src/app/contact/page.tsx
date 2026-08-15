@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHero image="/images/blog/hero.jpg" title="contact" />
+      <PageHero image="/images/blog/hero.png" title="contact" />
       <ContactInfo />
       <ContactFormSection />
       <LocationMap />
