@@ -11,6 +11,11 @@ import { Testimonials } from "@/components/shared/Testimonials";
 export const metadata: Metadata = {
   title: "About",
   description: "Découvrez notre histoire, notre philosophie culinaire et notre équipe.",
+  openGraph: {
+    title: "About",
+    description: "Découvrez notre histoire, notre philosophie culinaire et notre équipe.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {

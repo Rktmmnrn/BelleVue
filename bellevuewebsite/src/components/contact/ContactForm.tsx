@@ -20,7 +20,7 @@ function SubmitButton() {
 }
 
 const fieldClasses =
-  "w-full border-b border-stone bg-transparent py-2 text-sm text-ink outline-none placeholder:text-ink/50 focus:border-gold";
+  "w-full border-b border-stone bg-transparent py-2 text-sm text-ink outline-none placeholder:text-ink/50 focus-visible:border-gold focus-visible:ring-1 focus-visible:ring-gold";
 
 export function ContactForm() {
   const [state, formAction] = useActionState(submitContactForm, initialState);
@@ -33,21 +33,39 @@ export function ContactForm() {
       </p>
 
       <div>
-        <input name="name" type="text" placeholder="Name" className={fieldClasses} />
+        <label htmlFor="name" className="sr-only">
+          Name
+        </label>
+        <input id="name" name="name" type="text" placeholder="Name" className={fieldClasses} />
         {state.errors?.name && <p className="mt-1 text-xs text-red-600">{state.errors.name}</p>}
       </div>
 
       <div>
-        <input name="email" type="email" placeholder="Email" className={fieldClasses} />
+        <label htmlFor="email" className="sr-only">
+          Email
+        </label>
+        <input id="email" name="email" type="email" placeholder="Email" className={fieldClasses} />
         {state.errors?.email && <p className="mt-1 text-xs text-red-600">{state.errors.email}</p>}
       </div>
 
       <div>
-        <input name="phone" type="tel" placeholder="Phone" className={fieldClasses} />
+        <label htmlFor="phone" className="sr-only">
+          Phone
+        </label>
+        <input id="phone" name="phone" type="tel" placeholder="Phone" className={fieldClasses} />
       </div>
 
       <div>
-        <textarea name="message" placeholder="Message" rows={4} className={`${fieldClasses} resize-none`} />
+        <label htmlFor="message" className="sr-only">
+          Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Message"
+          rows={4}
+          className={`${fieldClasses} resize-none`}
+        />
         {state.errors?.message && (
           <p className="mt-1 text-xs text-red-600">{state.errors.message}</p>
         )}

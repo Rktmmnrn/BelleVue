@@ -7,6 +7,11 @@ import { LocationMap } from "@/components/shared/LocationMap";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Réservez une table ou contactez-nous pour toute question.",
+  openGraph: {
+    title: "Contact",
+    description: "Réservez une table ou contactez-nous pour toute question.",
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {

@@ -10,13 +10,19 @@ export const siteConfig = {
   name: "Logo", // TODO: remplacer par le vrai nom du restaurant
   tagline: "restaurant.bar.coffee.bistro",
   description:
-    "Restaurant, bar, coffee, bistro à Utica, Pennsylvania. Réservez votre table pour une expérience culinaire raffinée.",
+    "Restaurant, bar, coffee & bistro in Utica, Pennsylvania. Book your table for a refined dining experience.",
+  url: "https://example.com", // TODO: remplacer par le vrai domaine une fois déployé
   contact: {
     email: "kenzi.lawson@example.com",
     phone: "(316) 555-0116",
     address: {
       line1: "3517 W. Gray St.",
       line2: "Utica, Pennsylvania 57867",
+      // Champs structurés (pour le JSON-LD / SEO local) — mêmes infos que line1/line2 ci-dessus
+      city: "Utica",
+      region: "PA",
+      postalCode: "57867",
+      country: "US",
     },
   },
   hours: [

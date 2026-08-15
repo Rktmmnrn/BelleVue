@@ -28,7 +28,7 @@ export function Button({
   type = "button",
   className = "",
 }: ButtonProps) {
-  const classes = `inline-flex w-fit items-center justify-center border px-7 py-3 font-body text-xs uppercase tracking-wide transition-colors duration-300 ${variants[variant]} ${className}`;
+  const classes = `inline-flex w-fit items-center justify-center border px-7 py-3 font-body text-xs uppercase tracking-wide transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold ${variants[variant]} ${className}`;
 
   if (href) {
     return (

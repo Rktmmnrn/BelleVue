@@ -7,6 +7,11 @@ import { blogPosts } from "@/data/blog-posts";
 export const metadata: Metadata = {
   title: "Blog",
   description: "Actualités, coulisses et conseils du restaurant.",
+  openGraph: {
+    title: "Blog",
+    description: "Actualités, coulisses et conseils du restaurant.",
+    url: "/blog",
+  },
 };
 
 export default function BlogPage() {

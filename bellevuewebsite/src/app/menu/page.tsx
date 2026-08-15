@@ -8,6 +8,11 @@ import { MenuExplorer } from "@/components/menu/MenuExplorer";
 export const metadata: Metadata = {
   title: "Menu",
   description: "Découvrez notre carte : plats signature, boissons, fruits de mer et desserts.",
+  openGraph: {
+    title: "Menu",
+    description: "Découvrez notre carte : plats signature, boissons, fruits de mer et desserts.",
+    url: "/menu",
+  },
 };
 
 export default function MenuPage() {
