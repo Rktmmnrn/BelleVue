@@ -6,6 +6,17 @@ Ceci est le site web de l'hotel restaurant BELLE VUE
 
 Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 · Motion
 
+## Sommaire
+ 
+- [Structure du projet](#structure-du-projet)
+- [Fonctionnalités](#fonctionnalités)
+- [Démarrage rapide](#démarrage-rapide)
+- [Scripts disponibles](#scripts-disponibles)
+- [Configuration du contenu](#configuration-du-contenu)
+- [Checklist avant mise en ligne](#checklist-avant-mise-en-ligne)
+- [Déploiement](#déploiement)
+- [Notes techniques](#notes-techniques)
+
 ---
 
 ## structure du projet
@@ -52,20 +63,26 @@ restaurant-nextjs/
 └── README.md
 ```
 
----
-
-## Sommaire
+## Fonctionnalités
  
-- [Fonctionnalités](#fonctionnalités)
-- [Structure du projet](#structure-du-projet)
-- [Démarrage rapide](#démarrage-rapide)
-- [Scripts disponibles](#scripts-disponibles)
-- [Configuration du contenu](#configuration-du-contenu)
-- [Checklist avant mise en ligne](#checklist-avant-mise-en-ligne)
-- [Déploiement](#déploiement)
-- [Notes techniques](#notes-techniques)
-
----
+- **5 pages** (Accueil, Menu, About, Blog, Contact) + **6 pages de détail d'article**
+  (`/blog/[slug]`), toutes générées statiquement
+- **Header unifié** : nav mobile plein écran + panneau d'infos desktop (contact/horaires/
+  réseaux), pilotés par un seul état partagé
+- **Menu filtrable** par catégorie (special menu / drinks / seafood / desserts), avec
+  transition animée
+- **Carousels fonctionnels** (galerie photo, témoignages) — vrai défilement au clic
+- **Formulaire de contact** avec validation côté serveur réelle (Server Action +
+  `useActionState`/`useFormStatus`), états de chargement et erreurs par champ
+- **Animations au scroll** (Motion), désactivées automatiquement si l'utilisateur a
+  activé "réduire les animations" dans son OS
+- **SEO** : `sitemap.xml`, `robots.txt`, JSON-LD `Restaurant` (schema.org), Open Graph
+  et Twitter Card sur chaque page
+- **Accessibilité** : lien "Skip to content", focus clavier visible, labels de
+  formulaire, `aria-*` sur la nav et les composants interactifs
+- **Polices Google auto-hébergées** via `next/font` (pas de `<link>` externe)
+- Design tokens centralisés (couleurs, polices) dans `globals.css` via Tailwind v4
+  (`@theme`) — pas de `tailwind.config.js`
 
 ## Démarrage rapide
  
@@ -73,6 +90,7 @@ restaurant-nextjs/
  
 - Node.js **20 LTS** ou plus récent (`node -v`)
 - npm (fourni avec Node) — yarn/pnpm fonctionnent aussi
+
 ### Installation
  
 ```bash
