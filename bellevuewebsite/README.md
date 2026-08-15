@@ -13,8 +13,6 @@ Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 · Motion
 - [Démarrage rapide](#démarrage-rapide)
 - [Scripts disponibles](#scripts-disponibles)
 - [Configuration du contenu](#configuration-du-contenu)
-- [Checklist avant mise en ligne](#checklist-avant-mise-en-ligne)
-- [Déploiement](#déploiement)
 - [Notes techniques](#notes-techniques)
 
 ---
@@ -128,3 +126,18 @@ Les images sont dans `public/images/`, organisées par page. Chaque emplacement 
 placeholder généré (fond bleu nuit, bordure dorée, libellé) — remplace le fichier en
 gardant le même nom et le composant qui l'affiche n'a pas besoin de changer.
  
+---
+
+## Notes techniques
+ 
+- **Node 20+ requis.** Sur Debian/Parrot OS, le paquet `nodejs` des dépôts est souvent
+  trop ancien pour Next.js — passe par [nvm](https://github.com/nvm-sh/nvm)
+  (`nvm install --lts`) plutôt que `apt install nodejs`.
+- **Tailwind CSS v4** : pas de `tailwind.config.js`. Les tokens (couleurs, polices) sont
+  définis directement dans `src/app/globals.css` via `@theme`.
+- **Erreur `Cannot find name 'LayoutProps'` (ou `PageProps`) ?** Ces types sont générés
+  par Next (`.next/types/`) au premier `next dev`, `next build` ou `next typegen` — pas
+  fournis par défaut par le package. Lance le serveur une fois et l'erreur disparaît.
+- **Polices** : `next/font/google` télécharge Tenor Sans et Josefin Sans au moment du
+  build — une connexion internet est nécessaire (échoue derrière un pare-feu strict ou
+  en offline complet).
