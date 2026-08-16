@@ -20,6 +20,23 @@ export default function MenuPage() {
     <>
       <PageHero image="/images/menu/hero.png" title="menu" />
 
+      <div className="flex w-full relative">
+        <figure className="absolute flex w-[30%] h-80 left-[-40px] top-[-110px] z-30">
+          <Image
+            src="/images/menu/top-left.png"
+            alt="deco 1"
+            fill
+            className="object-cover" />
+        </figure>
+        <figure className="absolute flex w-[23%] h-80 right-[-40px] top-[-110px] z-30">
+          <Image
+            src="/images/menu/top-right.png"
+            alt="deco 2"
+            fill
+            className="object-cover" />
+        </figure>
+      </div>
+
       <section className="flex flex-col items-center gap-10 bg-ink px-5 py-20 text-white md:px-16 lg:py-28">
         <Reveal className="flex flex-col items-center gap-10">
           <SectionHeading
