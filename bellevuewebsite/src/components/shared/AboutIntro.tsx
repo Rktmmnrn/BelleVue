@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -8,7 +7,7 @@ interface AboutIntroProps {
   ctaHref: string;
 }
 
-export function AboutIntro({ image, ctaLabel, ctaHref }: AboutIntroProps) {
+export function AboutIntro({ ctaLabel, ctaHref }: AboutIntroProps) {
   return (
     <div className="flex items-center justify-center">
       <div className="flex flex-col w-3/4 lg:w-3/5 items-center justify-center gap-4">

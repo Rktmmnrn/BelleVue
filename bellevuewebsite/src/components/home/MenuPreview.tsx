@@ -8,7 +8,7 @@ export function MenuPreview() {
   const preview = menuItems.slice(0, 6);
 
   return (
-    <section className="flex flex-col items-center gap-10 bg-ink px-5 py-20 text-white md:px-16 lg:py-28">
+    <section className="flex flex-col items-center gap-10 bg-ink px-5 py-20 text-white md:px-0 lg:py-28">
       <Reveal className="flex flex-col items-center gap-10">
         <SectionHeading
           eyebrow="taste the best that surprise you"
@@ -21,15 +21,11 @@ export function MenuPreview() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
-          {menuCategories.map((cat, i) => (
+          {menuCategories.map((cat) => (
             <button
               key={cat}
               type="button"
-              className={`border px-6 py-3 font-body text-xs uppercase tracking-wide transition-colors ${
-                i === 0
-                  ? "border-gold bg-gold text-ink"
-                  : "border-gold text-gold hover:bg-gold hover:text-ink"
-              }`}
+              className={`border px-6 py-3 font-body text-xs uppercase tracking-wide transition-colors border-gold text-gold hover:bg-gold hover:text-ink`}
             >
               {cat}
             </button>
@@ -39,12 +35,13 @@ export function MenuPreview() {
 
       <Reveal
         delay={0.1}
-        className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_2fr_1fr]"
+        className="relative grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_2fr_1fr]"
       >
-        <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
-          <div className="relative h-full w-full">
+        <div className="relative hidden lg:flex items-center justify-center w-full h-full">
+          <span className="w-4/5 h-5/6 flex border border-gold"></span>
+          <figure className="absolute h-[70%] w-full">
             <Image src="/images/home/menu-left.png" alt="Plat du menu" fill className="object-cover" />
-          </div>
+          </figure>
         </div>
 
         <div className="flex flex-col items-center gap-6 bg-ink-soft px-6 py-10 md:px-14">
@@ -67,10 +64,11 @@ export function MenuPreview() {
           </Button>
         </div>
 
-        <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
-          <div className="relative h-full w-full">
+        <div className="relative hidden lg:flex items-center justify-center w-full h-full">
+          <span className="w-4/5 h-5/6 flex border border-gold"></span>
+          <figure className="absolute h-[70%] w-full">
             <Image src="/images/home/menu-right.png" alt="Plat du menu" fill className="object-cover" />
-          </div>
+          </figure>
         </div>
       </Reveal>
     </section>

@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Hero() {
   return (
-    <section className="relative flex h-screen min-h-[640px] w-full flex-col justify-end overflow-hidden text-white">
+    <section className="relative flex h-screen min-h-[640px] w-full flex-col justify-center items-start overflow-hidden text-white">
       <Image
         src="/images/hero/hero-dining.png"
         alt="Salle du restaurant, ambiance chaleureuse"
@@ -22,13 +22,13 @@ export function Hero() {
           Lorem ipsum dolor sit amet consectetur. Vulputate a vitae eget volutpat integer. Id ut
           vitae eget integer. Eu curabitur nam facilisi semper in.
         </p>
-        <Button href="/menu" variant="gold" className="mt-6">
+        <Button href="/menu" variant="gold" className="mt-6 font-black">
           discover menu
         </Button>
       </Reveal>
 
-      {/* Barre de réservation — visuelle pour l'instant, à brancher sur un vrai système plus tard */}
-      <div className="z-10 grid grid-cols-2 gap-3 bg-ink p-5 sm:grid-cols-4 md:gap-4 md:px-10 md:py-6 lg:mx-16 lg:mb-0 lg:w-fit">
+      {/* Barre de réservation */}
+      <div className="absolute z-10 w-full grid grid-cols-2 bottom-0 gap-3 bg-ink p-5 sm:grid-cols-4 md:gap-4 md:px-10 md:py-6 lg:mb-0 lg:w-fit lg:flex lg:flex-grid lg:right-0">
         <div className="flex items-center justify-center border border-gold px-5 py-3 font-display text-sm">
           1 Person
         </div>
@@ -40,7 +40,7 @@ export function Hero() {
         </div>
         <button
           type="button"
-          className="border border-gold px-5 py-3 font-body text-xs uppercase tracking-wide text-white transition-colors hover:bg-gold hover:text-ink"
+          className="border border-gold px-5 py-3 font-body text-xs uppercase tracking-wide text-white transition-colors hover:bg-gold hover:text-ink cursor-pointer"
         >
           book now
         </button>

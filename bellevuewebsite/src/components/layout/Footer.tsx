@@ -16,7 +16,7 @@ export function Footer() {
         <div className="flex flex-col items-start gap-3">
           <div className="flex flex-col gap-1">
             <span className="font-display text-2xl uppercase">{siteConfig.name}</span>
-            <span className="text-[10px] uppercase">{siteConfig.tagline}</span>
+            <span className="text-[5px] uppercase">{siteConfig.tagline}</span>
           </div>
           <p className="text-sm">{siteConfig.description}</p>
           <div className="flex gap-4">
@@ -27,7 +27,7 @@ export function Footer() {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="transition-transform hover:scale-125"
+                  className="transition-transform hover:scale-125 border border-gold text-gold p-2 rounded-full"
                 >
                   <Icon size={16} />
                 </a>
@@ -64,7 +64,7 @@ export function Footer() {
           <p className="text-sm text-gold">
             Register your email to not miss any news and offers from us
           </p>
-          {/* TODO phase contact : brancher un vrai submit (server action) */}
+          {/* TODO phase contact */}
           <form className="flex items-center border border-gold px-3 py-2">
             <input
               type="email"

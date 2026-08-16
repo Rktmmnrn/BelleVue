@@ -7,7 +7,7 @@ export function Philosophy() {
   return (
     <Reveal>
       <section className="grid grid-cols-1 items-center gap-10 px-5 py-20 text-ink md:px-16 lg:grid-cols-2 lg:gap-14 lg:py-28">
-        <div className="relative aspect-square w-full lg:h-[583px]">
+        <div className="relative aspect-square w-full lg:h-[600px]">
           <Image
             src="/images/home/philosophy.png"
             alt="Préparation en cuisine"

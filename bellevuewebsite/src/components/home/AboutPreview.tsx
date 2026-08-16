@@ -53,8 +53,8 @@ export function AboutPreview() {
           </Button>
         </div>
 
-        <div className="relative lg:flex lg:items-center lg:justify-end">
-          <div className="relative flex aspect-square w-full lg:h-[600px] lg:w-4/5">
+        <div className="relative flex h-[400px] md:h-[500px] lg:h-[600px] lg:items-center">
+          <div className="absolute flex aspect-square h-4/5 lg:h-full w-3/5 bottom-0 right-0">
             <Image
               src="/images/home/about-2.png"
               alt="Notre table"
@@ -62,7 +62,7 @@ export function AboutPreview() {
               className="object-cover right-0"
             />
           </div>
-          <div className="relative flex flex-col gap-4 bg-ink p-8 text-white lg:absolute lg:justify-center lg:left-0">
+          <div className="flex flex-col gap-4 bg-ink text-white absolute justify-center items-center left-0 w-3/5 h-4/5 p-4 lg:p-8 lg:h-3/5">
             <h3 className="font-display text-lg uppercase text-gold">opening time hours</h3>
             <div className="flex flex-col gap-3">
               {siteConfig.hours.map((h) => (

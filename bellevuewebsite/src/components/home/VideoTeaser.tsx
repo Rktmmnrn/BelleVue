@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export function VideoTeaser() {
   return (
     <Reveal>
-      <section className="relative flex h-[70vh] min-h-[400px] w-full items-center justify-center overflow-hidden">
+      <section className="relative flex h-[70vh] min-h-[400px] w-full items-center justify-center overflow-hidden my-[120px]">
         <Image
           src="/images/home/video-teaser.png"
           alt="Aperçu du restaurant"

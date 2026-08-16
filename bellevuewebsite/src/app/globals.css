@@ -13,3 +13,7 @@
 body {
   @apply bg-white text-ink font-body antialiased;
 }
+
+button {
+  @apply cursor-pointer;
+}
