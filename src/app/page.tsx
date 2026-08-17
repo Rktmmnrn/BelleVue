@@ -16,7 +16,7 @@ export default function Home() {
       <MenuPreview />
       <VideoTeaser />
       <Philosophy />
-      <Stats />
+      <Stats variant="home" />
       <Testimonials />
       <NewsPreview />
       <LocationMap />

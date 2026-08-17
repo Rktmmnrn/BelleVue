@@ -16,7 +16,12 @@ export function Philosophy() {
           />
         </div>
         <div className="flex flex-col items-start gap-4">
-          <SectionHeading eyebrow="quality and balance" title="our food philosophy" align="left" />
+          <SectionHeading
+            eyebrow="quality and balance"
+            title="our food philosophy"
+            align="left"
+            tone="light"
+          />
           <p className="text-sm text-ink/80 sm:text-base">
             Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus
             placerat turpis. Ut ullamcorper condimentum tincidunt orci quis ullamcorper. Arcu ut

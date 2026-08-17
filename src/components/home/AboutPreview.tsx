@@ -21,6 +21,7 @@ export function AboutPreview() {
             eyebrow="about restaurant"
             title="our commitment to quality and taste"
             align="left"
+            tone="light"
           />
           <p className="text-sm text-ink/80 sm:text-base">
             Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus

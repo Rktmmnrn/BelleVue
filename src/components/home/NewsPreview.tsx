@@ -8,11 +8,15 @@ export function NewsPreview() {
   return (
     <section className="flex flex-col items-center gap-12 px-5 py-20 text-ink md:px-16 lg:py-28">
       <Reveal>
-        <SectionHeading eyebrow="latest new" title="what's new in our blog" />
+        <SectionHeading
+          eyebrow="latest new"
+          title="what's new in our blog"
+          tone="light"
+        />
       </Reveal>
 
       <div className="grid w-full grid-cols-1 gap-10 lg:grid-cols-3">
-        {blogPosts.map((post, i) => (
+        {blogPosts.slice(0, 3).map((post, i) => (
           <Reveal key={post.slug} delay={i * 0.1}>
             <article className="flex h-full flex-col gap-4">
               <div className="relative aspect-[4/3] w-full">

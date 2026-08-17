@@ -23,7 +23,7 @@ export function SectionHeading({
     >
       <h3
         className={`flex items-center gap-4 font-body text-sm font-normal uppercase tracking-wide ${
-          tone === "light" ? "text-ink" : "text-ink"
+          tone === "light" ? "text-ink" : "text-white"
         } ${
           isCenter
             ? "before:h-px before:w-10 before:bg-gold after:h-px after:w-10 after:bg-gold"
@@ -34,7 +34,7 @@ export function SectionHeading({
       </h3>
       <h2
         className={`font-display text-2xl uppercase sm:text-3xl lg:text-4xl ${
-          tone === "light" ? "text-gold" : "text-ink"
+          tone === "light" ? "text-ink" : "text-gold"
         }`}
       >
         {title}

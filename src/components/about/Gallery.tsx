@@ -10,11 +10,11 @@ const images = [
 
 export function Gallery() {
   return (
-    <Reveal>
-      <section className="px-5 py-16 md:px-16 lg:py-20">
+    <Reveal className="">
+      <section className="px-0 py-16 lg:py-20">
         <ScrollCarousel>
           {images.map((src) => (
-            <div key={src} className="relative aspect-[3/4] w-[280px] shrink-0 sm:w-[340px]">
+            <div key={src} className="relative shrink-0 aspect-[3/4] h-[300px] w-[82vw] sm:w-[60vw] md:h-[350px] lg:h-[400px] lg:w-[46vw]">
               <Image src={src} alt="Photo du restaurant" fill className="object-cover" />
             </div>
           ))}

@@ -20,7 +20,7 @@ export default function MenuPage() {
     <>
       <PageHero image="/images/menu/hero.png" title="menu" />
 
-      <section className="flex flex-col items-center gap-10 px-5 py-20 text-white md:px-0 lg:py-28 overflow-hidden">
+      <section className="flex flex-col items-center gap-10 px-5 pt-20 text-white md:px-0 lg:pt-28 overflow-hidden">
         <div className="hidden lg:flex w-full relative">
           <figure className="absolute flex w-[30%] h-80 left-[-40px] top-[-200px] z-30">
             <Image

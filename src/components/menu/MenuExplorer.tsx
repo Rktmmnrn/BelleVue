@@ -21,7 +21,7 @@ export function MenuExplorer() {
             className={`border px-6 py-3 font-body text-xs uppercase tracking-wide transition-colors
               ${active === cat
                 ? "border-gold bg-gold text-ink"
-                : "border-gold text-gold hover:bg-gold hover:text-ink"
+                : "border-gold text-gold hover:bg-gold hover:text-white"
               }`}
           >
             {cat}

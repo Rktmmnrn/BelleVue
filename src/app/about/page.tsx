@@ -30,7 +30,7 @@ export default function AboutPage() {
       </section>
 
       <Gallery />
-      <Stats />
+      <Stats variant="about" />
       <PrivateEvents />
       <ChefPhilosophy />
       <Testimonials />

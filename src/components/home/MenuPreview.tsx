@@ -13,7 +13,6 @@ export function MenuPreview() {
         <SectionHeading
           eyebrow="taste the best that surprise you"
           title="our special menu"
-          tone="light"
         />
         <p className="max-w-md text-center text-sm text-white/80">
           Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus
