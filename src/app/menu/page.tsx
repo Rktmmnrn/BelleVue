@@ -37,7 +37,7 @@ export default function MenuPage() {
         </figure>
       </div>
 
-      <section className="flex flex-col items-center gap-10 bg-ink px-5 py-20 text-white md:px-16 lg:py-28">
+      <section className="flex flex-col items-center gap-10 px-5 py-20 text-white md:px-16 lg:py-28">
         <Reveal className="flex flex-col items-center gap-10">
           <SectionHeading
             eyebrow="taste the best that surprise you"
