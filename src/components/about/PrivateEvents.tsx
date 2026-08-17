@@ -17,7 +17,8 @@ export function PrivateEvents() {
             className="object-cover"
           />
         </div>
-        <div className="flex flex-col items-start gap-5">
+
+        <div className="flex flex-col items-start gap-5 px-10 py-10 md:px-15 lg:px-0 lg:py-0">
           <SectionHeading
             eyebrow="private event"
             title="perfect place for private event"
