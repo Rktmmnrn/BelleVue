@@ -10,7 +10,7 @@ export function MenuExplorer() {
 
   return (
     <div className="flex flex-col items-center gap-10">
-      <div className="flex flex-wrap justify-center gap-3" role="tablist" aria-label="Catégories du menu">
+      <div className="flex flex-wrap justify-center gap-3 w-full" role="tablist" aria-label="Catégories du menu">
         {menuCategories.map((cat) => (
           <button
             key={cat}
@@ -18,18 +18,18 @@ export function MenuExplorer() {
             role="tab"
             aria-selected={active === cat}
             onClick={() => setActive(cat)}
-            className={`border px-6 py-3 font-body text-xs uppercase tracking-wide transition-colors ${
-              active === cat
+            className={`border px-6 py-3 font-body text-xs uppercase tracking-wide transition-colors
+              ${active === cat
                 ? "border-gold bg-gold text-ink"
                 : "border-gold text-gold hover:bg-gold hover:text-ink"
-            }`}
+              }`}
           >
             {cat}
           </button>
         ))}
       </div>
 
-      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">
+      <div className="grid w-4/5 min-w-[320px] lg:w-full grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2 bg-ink px-10 py-12">
         <AnimatePresence mode="popLayout">
           {filtered.map((item) => (
             <motion.div

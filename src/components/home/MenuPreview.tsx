@@ -40,7 +40,11 @@ export function MenuPreview() {
         <div className="relative hidden lg:flex items-center justify-center w-full h-full">
           <span className="w-4/5 h-5/6 flex border border-gold"></span>
           <figure className="absolute h-[70%] w-full">
-            <Image src="/images/home/menu-left.png" alt="Plat du menu" fill className="object-cover" />
+            <Image
+              src="/images/home/menu-left.png"
+              alt="Plat du menu"
+              fill
+              className="object-cover" />
           </figure>
         </div>
 
@@ -67,7 +71,11 @@ export function MenuPreview() {
         <div className="relative hidden lg:flex items-center justify-center w-full h-full">
           <span className="w-4/5 h-5/6 flex border border-gold"></span>
           <figure className="absolute h-[70%] w-full">
-            <Image src="/images/home/menu-right.png" alt="Plat du menu" fill className="object-cover" />
+            <Image
+              src="/images/home/menu-right.png"
+              alt="Plat du menu"
+              fill
+              className="object-cover" />
           </figure>
         </div>
       </Reveal>

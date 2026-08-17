@@ -20,31 +20,31 @@ export default function MenuPage() {
     <>
       <PageHero image="/images/menu/hero.png" title="menu" />
 
-      <div className="flex w-full relative">
-        <figure className="absolute flex w-[30%] h-80 left-[-40px] top-[-110px] z-30">
-          <Image
-            src="/images/menu/top-left.png"
-            alt="deco 1"
-            fill
-            className="object-cover" />
-        </figure>
-        <figure className="absolute flex w-[23%] h-80 right-[-40px] top-[-110px] z-30">
-          <Image
-            src="/images/menu/top-right.png"
-            alt="deco 2"
-            fill
-            className="object-cover" />
-        </figure>
-      </div>
+      <section className="flex flex-col items-center gap-10 px-5 py-20 text-white md:px-0 lg:py-28 overflow-hidden">
+        <div className="hidden lg:flex w-full relative">
+          <figure className="absolute flex w-[30%] h-80 left-[-40px] top-[-200px] z-30">
+            <Image
+              src="/images/menu/top-left.png"
+              alt="deco 1"
+              fill
+              className="object-cover" />
+          </figure>
+          <figure className="absolute flex w-[23%] h-80 right-[-40px] top-[-200px] z-30">
+            <Image
+              src="/images/menu/top-right.png"
+              alt="deco 2"
+              fill
+              className="object-cover" />
+          </figure>
+        </div>
 
-      <section className="flex flex-col items-center gap-10 px-5 py-20 text-white md:px-16 lg:py-28">
         <Reveal className="flex flex-col items-center gap-10">
           <SectionHeading
             eyebrow="taste the best that surprise you"
             title="our special menu"
             tone="light"
           />
-          <p className="max-w-md text-center text-sm text-white/80">
+          <p className="max-w-md text-center text-md text-ink/80 font-light">
             Lorem ipsum dolor sit amet consectetur. Pretium felis egestas aliquet et ut netus
             placerat turpis. Ut ullamcorper condimentum tincidunt orci quis.
           </p>
@@ -52,30 +52,30 @@ export default function MenuPage() {
 
         <Reveal
           delay={0.1}
-          className="grid w-full grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_2fr_1fr]"
+          className="grid w-full grid-cols-1 items-start gap-8 px-5 lg:grid-cols-[1fr_2fr_1fr] lg:px-0"
         >
-          <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
-            <div className="relative h-full w-full">
+          <div className="relative hidden lg:flex items-center justify-center w-full h-full">
+            <span className="w-4/5 h-5/6 flex border border-gold"></span>
+            <figure className="absolute flex h-[70%] w-full left-0">
               <Image
                 src="/images/home/menu-left.png"
                 alt="Plat du menu"
                 fill
-                className="object-cover"
-              />
-            </div>
+                className="object-cover" />
+            </figure>
           </div>
 
           <MenuExplorer />
 
-          <div className="relative mx-auto hidden aspect-[3/4] w-full max-w-xs border border-gold p-4 lg:block">
-            <div className="relative h-full w-full">
+          <div className="relative hidden lg:flex items-center justify-center w-full h-full">
+            <span className="w-4/5 h-5/6 flex border border-gold"></span>
+            <figure className="absolute h-[70%] w-full">
               <Image
                 src="/images/home/menu-right.png"
                 alt="Plat du menu"
                 fill
-                className="object-cover"
-              />
-            </div>
+                className="object-cover" />
+            </figure>
           </div>
         </Reveal>
       </section>
